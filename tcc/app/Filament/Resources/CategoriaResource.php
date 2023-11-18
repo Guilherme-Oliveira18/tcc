@@ -16,7 +16,6 @@ use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
 use Illuminate\Support\Str;
 
-
 class CategoriaResource extends Resource
 {
     protected static ?string $model = Categoria::class;
@@ -25,12 +24,13 @@ class CategoriaResource extends Resource
 
     public static function form(Form $form): Form
     {
-        return $form
-            ->schema([
-                TextInput::make('titulo')
+        return $form->schema([
+            TextInput::make('titulo')
                 ->live()
                 ->label(__('Titulo'))
-                ->required()->minLength(1)->maxLength(150)
+                ->required()
+                ->minLength(1)
+                ->maxLength(150)
                 ->afterStateUpdated(function (string $operation, $state, Forms\Set $set) {
                     if ($operation === 'edit') {
                         return;
@@ -38,39 +38,57 @@ class CategoriaResource extends Resource
 
                     $set('slug', Str::slug($state));
                 }),
-            TextInput::make('slug')->required()->minLength(1)->unique(ignoreRecord: true)->maxLength(150),
-            TextInput::make('cor_texto')->nullable()  ->label(__('Cor do Texto')),
-            TextInput::make('cor_bg')->nullable() ->label(__('Cor do fundo da tag')),
-            ]);
+            TextInput::make('slug')
+                ->required()
+                ->minLength(1)
+                ->unique(ignoreRecord: true)
+                ->maxLength(150),
+            Forms\Components\Select::make('cor_texto')
+                ->options(Categoria::CATEGORIAS)
+                ->nullable()
+                ->required()
+                ->label(__('Cor do Texto')),
+
+            Forms\Components\Select::make('cor_bg')
+                ->nullable()
+                ->options(Categoria::CATEGORIAS)
+                ->required()
+                ->label(__('Cor do fundo da tag')),
+
+        ]);
     }
 
     public static function table(Table $table): Table
     {
         return $table
             ->columns([
-                TextColumn::make('titulo')->sortable()->searchable(),
-                TextColumn::make('slug')->sortable()->searchable(),
-                TextColumn::make('cor_texto')->sortable()->searchable() ->label(__('Cor do Texto')),
-                TextColumn::make('cor_bg')->sortable()->searchable()->label(__('Cor do fundo')),
+                TextColumn::make('titulo')
+                    ->sortable()
+                    ->searchable(),
+                TextColumn::make('slug')
+                    ->sortable()
+                    ->searchable(),
+                TextColumn::make('cor_texto')
+                    ->sortable()
+                    ->searchable()
+                    ->label(__('Cor do Texto')),
+                TextColumn::make('cor_bg')
+                    ->sortable()
+                    ->searchable()
+                    ->label(__('Cor do fundo')),
             ])
             ->filters([
                 //
             ])
-            ->actions([
-                Tables\Actions\EditAction::make(),
-            ])
-            ->bulkActions([
-                Tables\Actions\BulkActionGroup::make([
-                    Tables\Actions\DeleteBulkAction::make(),
-                ]),
-            ]);
+            ->actions([Tables\Actions\EditAction::make()])
+            ->bulkActions([Tables\Actions\BulkActionGroup::make([Tables\Actions\DeleteBulkAction::make()])]);
     }
 
     public static function getRelations(): array
     {
         return [
-            //
-        ];
+                //
+            ];
     }
 
     public static function getPages(): array

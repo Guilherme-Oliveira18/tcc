@@ -18,8 +18,8 @@ class CategoriaFactory extends Factory
     {
         return [
             //
-            'titulo' => $this->faker->sentence(),
-            'slug' => $this->faker->slug(3),
+           // 'titulo' => $this->faker->sentence(),
+            //'slug' => $this->faker->slug(3),
         ];
     }
 }

@@ -8,6 +8,7 @@ use App\Filament\Resources\PostResource\RelationManagers\ComentariosRelationMana
 use App\Models\Post;
 use Filament\Forms;
 use Filament\Forms\Components\Checkbox;
+use Filament\Forms\Components\DatePicker;
 use Filament\Forms\Components\DateTimePicker;
 use Filament\Forms\Components\FileUpload;
 use Filament\Forms\Components\RichEditor;
@@ -67,7 +68,13 @@ class PostResource extends Resource
                     ->label(__('Imagem'))
                     ->image()
                     ->directory('posts/thumbnails'),
-                DateTimePicker::make('publidado_em')->label(__('Publicado em')) ->nullable(),
+                DatePicker::make('publidado_em')->label(__('Publicado em'))
+                ->timezone('America/Sao_Paulo')
+                ->displayFormat('d/m/Y')
+                ->closeOnDateSelection()
+                ->maxDate(now())
+                ->native(false)
+                ->nullable(),
                 Checkbox::make('featured') ->label(__('Relevancia')),
                 Select::make('user_id')
                     ->relationship('author', 'name')

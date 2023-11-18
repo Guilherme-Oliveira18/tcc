@@ -20,13 +20,13 @@ class PostFactory extends Factory
     {
         return [
             //
-            'user_id'=>User::factory(),
-            'titulo' => $this->faker->sentence(),
-            'slug' => $this->faker->slug(3),
-            'image' => $this->faker->imageUrl(),
-            'body' => $this->faker->paragraph(12),
-            'publidado_em'=>$this->faker->dateTimeBetween('-1 Week','+1 week'),
-            'featured'=> $this->faker->boolean(10),
+            //'user_id'=>User::factory(),
+           // 'titulo' => $this->faker->sentence(),
+            //'slug' => $this->faker->slug(3),
+            //'image' => $this->faker->imageUrl(),
+            //'body' => $this->faker->paragraph(12),
+            //'publidado_em'=>$this->faker->dateTimeBetween('-1 Week','+1 week'),
+            //'featured'=> $this->faker->boolean(10),
 
         ];
     }

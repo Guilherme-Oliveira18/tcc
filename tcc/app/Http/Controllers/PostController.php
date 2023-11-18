@@ -40,4 +40,24 @@ class PostController extends Controller
             ]
         );
     }
+
+    public function gincana (Post $post)
+    {
+        return view(
+            'blog.gincana',
+            [
+                'post'=>$post
+            ]
+        );
+    }
+
+    public function historia (Post $post)
+    {
+        return view(
+            'blog.historia',
+            [
+                'post'=>$post
+            ]
+        );
+    }
 }

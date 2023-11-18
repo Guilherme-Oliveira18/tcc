@@ -3,7 +3,7 @@
     <div class="grid items-start grid-cols-12 gap-3 mt-5 article-body">
         <div class="flex items-center col-span-4 article-thumbnail">
             <a wire:navigate href="{{ route('blog.show', $post->slug) }}">
-                <img class="mx-auto mw-100 rounded-xl" src="{{ $post->getThumbnailUrl() }}" alt="thumbnail">
+                <img class=" object-fill  max-w-full h-auto mx-auto rounded-xl" src="{{ $post->getThumbnailUrl() }}" alt="thumbnail">
             </a>
         </div>
         <div class="col-span-8">

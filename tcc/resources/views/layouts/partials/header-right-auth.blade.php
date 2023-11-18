@@ -1,5 +1,5 @@
  <!-- Settings Dropdown -->
- <div class="relative flex ml-3 space-x-4">
+ <div class="relative flex ml-3 space-x-4 items-center">
     @if(Auth::user()->role === 'ADMIN' || Auth::user()->role === 'EDITOR')
         <x-nav-link :navigate='false' href="{{ url('admin') }}" :active="request()->routeIs('admin')">
             {{ __('Admin') }}
@@ -31,11 +31,11 @@
          <x-slot name="content">
              <!-- Account Management -->
              <div class="block px-4 py-2 text-xs text-gray-400">
-                 {{ __('Manage Account') }}
+                 {{ __('Gerencial Perfil') }}
              </div>
 
              <x-dropdown-link wire:navigate href="{{ route('profile.show') }}">
-                 {{ __('Profile') }}
+                 {{ __('Perfil') }}
              </x-dropdown-link>
 
              @if (Laravel\Jetstream\Jetstream::hasApiFeatures())
@@ -51,7 +51,7 @@
                  @csrf
 
                  <x-dropdown-link href="{{ route('logout') }}" @click.prevent="$root.submit();">
-                     {{ __('Log Out') }}
+                     {{ __('Sair') }}
                  </x-dropdown-link>
              </form>
          </x-slot>

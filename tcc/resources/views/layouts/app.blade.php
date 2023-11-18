@@ -14,9 +14,18 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.1.1/flowbite.min.css"  rel="stylesheet" />
 
     <!-- Scripts -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.1.1/flowbite.min.js"></script>
     @vite(['resources/css/app.css', 'resources/js/app.js'])
+
+    @livewireScripts
+
+
+
 
     <!-- Styles -->
     @livewireStyles
@@ -36,9 +45,9 @@
     @include('layouts.partials.footer')
 
 
-
     @stack('modals')
-    @livewireScripts
+
+
 </body>
 
 </html>

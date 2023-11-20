@@ -14,7 +14,6 @@ class PostController extends Controller
         return view(
             'blog.index',
             [
-
                 'categorias' => Categoria::whereHas('posts', function ($query) {
                     $query->published();
                 })->take(10)->get()
@@ -35,16 +34,6 @@ class PostController extends Controller
     {
         return view(
             'blog.sobre',
-            [
-                'post'=>$post
-            ]
-        );
-    }
-
-    public function gincana (Post $post)
-    {
-        return view(
-            'blog.gincana',
             [
                 'post'=>$post
             ]

@@ -8,3 +8,4 @@ navBtn.addEventListener('click', () => {
   menuBar.classList.toggle('block');
 })
 }
+export default mostra();

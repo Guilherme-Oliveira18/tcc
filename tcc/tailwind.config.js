@@ -3,9 +3,31 @@ import forms from '@tailwindcss/forms';
 import typography from '@tailwindcss/typography';
 
 
+const plugin = require("tailwindcss/plugin");
+
+const Myclass = plugin(function ({ addUtilities }) {
+  addUtilities({
+    ".my-rotate-y-180": {
+      transform: "rotateY(180deg)",
+    },
+    ".preserve-3d": {
+      transformStyle: "preserve-3d",
+    },
+    ".perspective": {
+      perspective: "1000px",
+    },
+    ".backface-hidden": {
+      backfaceVisibility: "hidden",
+    },
+  });
+});
+
 /** @type {import('tailwindcss').Config} */
+
 export default {
+    mode: "jit",
     content: [
+        "./resources/views/gincana/*.blade.php",
         './vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php',
         './vendor/laravel/jetstream/**/*.blade.php',
         './storage/framework/views/*.php',
@@ -13,9 +35,7 @@ export default {
         './vendor/awcodes/filament-tiptap-editor/resources/**/*.blade.php',
         "./node_modules/flowbite/**/*.js"
     ],
-
     theme: {
-
         extend: {
             opacity: {
                 '15': '0.15',
@@ -66,5 +86,5 @@ export default {
         },
     },
 
-    plugins: [forms, typography,require('flowbite/plugin')],
+    plugins: [forms, typography,require('flowbite/plugin')],plugins: [Myclass],
 };

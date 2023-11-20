@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <footer style = "background: #b91c1c" class="relative bg-blueGray-200 pt-8 pb-6">
 
 
@@ -84,4 +85,11 @@
             </div>
         </div>
     </div>
+=======
+<footer class="z-30 text-sm space-x-4 flex items-center border-t border-gray-100 flex-wrap justify-center py-4 ">
+    {{--<a class="text-gray-500 hover:text-red-600" href="/sobre">Sobre nós</a>--}}
+    {{--<a class="text-gray-500 hover:text-red-600" href="/blog">Ajuda</a>--}}
+    <a class="text-gray-500 hover:text-red-600" href="/login">Login</a>
+    <a class="text-gray-500 hover:text-red-600" href="/blog">Explorar</a>
+>>>>>>> 5682699e7505d6ea11b7d4b1842fbd370321c05a
 </footer>

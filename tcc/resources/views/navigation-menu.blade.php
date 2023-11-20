@@ -22,7 +22,11 @@
 
         </div>
         <div  :class="isOpen ? 'show' : 'hidden'" class=" justify-between items-center w-full lg:flex lg:w-auto lg:order-1 gap-3" id="mobilemenu">
+<<<<<<< HEAD
             <ul class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
+=======
+            <ul class="flex flex-col mt-4 font-medium lg:flex-row  md:flex-row lg:space-x-8 lg:mt-0">
+>>>>>>> 5682699e7505d6ea11b7d4b1842fbd370321c05a
                 <li><x-nav-link href="{{ route('home') }}" :active="request()->routeIs('home')">
                         {{ __('Inicio') }}
 
@@ -33,7 +37,7 @@
 
                     </x-nav-link>
                 </li>
-                <li><x-nav-link href="{{ route('blog.gincana') }}" :active="request()->routeIs('blog.gincana')">
+                <li><x-nav-link href="{{ route('gincana.index') }}" :active="request()->routeIs('gincana.index')">
                         {{ __('Gincanas') }}
                     </x-nav-link>
                 </li>

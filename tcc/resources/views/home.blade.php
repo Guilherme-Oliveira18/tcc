@@ -56,11 +56,23 @@
             </div>
             <hr>
 
+<<<<<<< HEAD
             <h2 class="mt-16 mb-5 text-3xl text-red-600 font-bold">Novidades</h2>
             <div class="w-full mb-5">
                 <div class="grid grid-cols-3 gap-10 w-full">
                     @foreach ($latestPosts as $Post)
                         <x-post.post-card :Post="$Post" class="md:col-span-1 col-span-3 " />
+=======
+        </div>
+        <hr>
+
+        <h2 class="mt-16 mb-5 text-3xl text-red-600 font-bold">Novidades</h2>
+        <div class="flex flex-row w-full">
+            <div class="container px-5 py-4 mx-auto">
+                <div class="flex flex-wrap -m-4">
+                    @foreach ($latestPosts as $Post)
+                        <x-post.post-card :Post="$Post"  />
+>>>>>>> 5682699e7505d6ea11b7d4b1842fbd370321c05a
                     @endforeach
                 </div>
             </div>

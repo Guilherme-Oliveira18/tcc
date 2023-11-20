@@ -26,7 +26,7 @@ class CategoriaResource extends Resource
     {
         return $form->schema([
             TextInput::make('titulo')
-                ->live()
+                ->live(onBlur: true)
                 ->label(__('Titulo'))
                 ->required()
                 ->minLength(1)

@@ -36,11 +36,13 @@
         <hr>
 
         <h2 class="mt-16 mb-5 text-3xl text-red-600 font-bold">Novidades</h2>
-        <div class="w-full mb-5">
-            <div class="grid grid-cols-3 gap-10 w-full">
-                @foreach ($latestPosts as $Post)
-                    <x-post.post-card :Post="$Post" class="md:col-span-1 col-span-3 " />
-                @endforeach
+        <div class="flex flex-row w-full">
+            <div class="container px-5 py-4 mx-auto">
+                <div class="flex flex-wrap -m-4">
+                    @foreach ($latestPosts as $Post)
+                        <x-post.post-card :Post="$Post"  />
+                    @endforeach
+                </div>
             </div>
         </div>
         <a class="mt-10 block text-center text-lg text-red-600 font-semibold hover:text-red-900 duration-200" href="/blog">Veja mais..</a>

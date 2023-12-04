@@ -67,7 +67,7 @@ class CursosResource extends Resource
                     ->sortable()
                     ->searchable(),
                 TextColumn::make('numeracao')
-                    ->prefix('EM')
+                    ->prefix('EM ')
                     ->sortable()
                     ->searchable(),
                 CheckboxColumn::make('ativo') ->label(__('Ativo')),

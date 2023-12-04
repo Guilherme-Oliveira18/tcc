@@ -1,10 +1,10 @@
  <!-- Settings Dropdown -->
  <div class="relative flex ml-3 space-x-4 items-center">
-    @if(Auth::user()->role === 'ADMIN' || Auth::user()->role === 'EDITOR')
-        <x-nav-link :navigate='false' href="{{ url('admin') }}" :active="request()->routeIs('admin')">
-            {{ __('Admin') }}
-        </x-nav-link>
-    @endif
+     @if (Auth::user()->role === 'ADMIN' || Auth::user()->role === 'EDITOR')
+         <x-nav-link :navigate='false' href="{{ url('admin') }}" :active="request()->routeIs('admin')">
+             {{ __('Admin') }}
+         </x-nav-link>
+     @endif
      <x-dropdown align="right" width="48">
          <x-slot name="trigger">
              @if (Laravel\Jetstream\Jetstream::managesProfilePhotos())

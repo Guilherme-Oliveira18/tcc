@@ -1,11 +1,11 @@
-<div class="flex flex-col justify-between items-center w-full min-h-screen">
+<div class="mt-24 flex flex-col justify-between items-center justify-content-center w-full min-h-screen">
     <div class="flex flex-row text-center items-center">
         <h1
-            class="text-3xl sm:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-br pb-4 md:pb-6 from-blue-500 to-violet-700 dark:from-blue-400">
+            class=" text-3xl sm:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-br pb-4 md:pb-6 from-blue-500 to-violet-700 dark:from-blue-400">
             Calendário de eventos</h1>
         </header>
     </div>
-    <div class="flex gap-4 md:gap-6 lg:gap-8 items-start" id="events-container">
+    <div class="flex gap-4 md:gap-6 lg:gap-8 items-center overflow-none" id="events-container">
         <div class="flex gap-3 items-center text-blue-500 mx-auto">
             <svg class="animate-spin h-8 w-8" width="20" viewBox="0 0 155 155" fill="none"
                 xmlns="http://www.w3.org/2000/svg">

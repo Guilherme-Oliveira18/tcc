@@ -58,5 +58,6 @@ class AdminPanelProvider extends PanelProvider
             ->brandLogo(asset('storage/logo/Logo.png'))
             ->brandLogoHeight('2rem')
             ->brandName('Fernando Prestes Cultural');
+
     }
 }

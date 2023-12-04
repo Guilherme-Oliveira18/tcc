@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-<footer style = "background: #b91c1c" class="relative bg-blueGray-200 pt-8 pb-6">
+<footer style = "background: #b91c1c" class="relative bottom-0 footer w-full bg-blueGray-200 pt-8 pb-6">
 
 
 
@@ -11,22 +10,22 @@
     <div class="container mx-auto px-4">
         <div class="flex flex-wrap text-left lg:text-left">
             <div class="w-full lg:w-6/12 px-4">
-                <h4 class="text-3xl fonat-semibold text-white">Fique em contato!</h4>
-                <h5 class="text-lg mt-0 mb-2 text-white">
+                <h4 class="text-3xl focus:outline-none font-bold rounded-lg text-white">Entre em contato!</h4>
+                <h5 class="text-lg mt-0 mb-2 rounded-lg text-white">
                     Encontre-nos em nossas plataformas
                 </h5>
                 <div class="mt-6 lg:mb-0 mb-6">
                     <button
-                        class="bg-white text-lightBlue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+                        class="bg-white hover:bg-gray-800 duration-200 text-lightBlue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
                         type="button">
                         <i class="fab fa-twitter"></i></button><button
-                        class="bg-white text-lightBlue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+                        class="bg-white hover:bg-gray-800 duration-200 text-lightBlue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
                         type="button">
                         <i class="fab fa-facebook-square"></i></button><button
-                        class="bg-white text-pink-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+                        class="bg-white hover:bg-gray-800 duration-200 text-green-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
                         type="button">
-                        <i class="fab fa-dribbble"></i></button><button
-                        class="bg-white text-lightBlue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+                        <i class="fab fa-whatsapp"></i></button><button
+                        class="bg-white hover:bg-gray-800 duration-200 text-lightBlue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
                         type="button">
                         <i class="fab fa-github"></i>
                     </button>
@@ -80,16 +79,9 @@
         <div class="flex flex-wrap items-center md:justify-between justify-center">
             <div class="w-full md:w-4/12 px-4 mx-auto text-center">
                 <div class="text-sm text-white font-semibold py-1">
-                    FPCultural © <span id="get-current-year">2023</span>
+                    Cultura FP © <span id="get-current-year">2023</span>
                 </div>
             </div>
         </div>
     </div>
-=======
-<footer class="z-30 text-sm space-x-4 flex items-center border-t border-gray-100 flex-wrap justify-center py-4 ">
-    {{--<a class="text-gray-500 hover:text-red-600" href="/sobre">Sobre nós</a>--}}
-    {{--<a class="text-gray-500 hover:text-red-600" href="/blog">Ajuda</a>--}}
-    <a class="text-gray-500 hover:text-red-600" href="/login">Login</a>
-    <a class="text-gray-500 hover:text-red-600" href="/blog">Explorar</a>
->>>>>>> 5682699e7505d6ea11b7d4b1842fbd370321c05a
 </footer>

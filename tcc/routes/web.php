@@ -14,6 +14,13 @@ use Illuminate\Support\Facades\Route;
 | routes are loaded by the RouteServiceProvider and all of them will
 | be assigned to the "web" middleware group. Make something great!
 |
+Route::middleware([
+    'auth:sanctum',
+    config('jetstream.auth_session'),
+])->group(function () {
+    //Route::get('/sobre',[PostController::class,'sobre']) -> name('blog.sobre');
+  //  Route::get('/gincana',[PostController::class,'sobre']) -> name('blog.sobre');
+})
 */
 
 Route::get('/',HomeController::class) -> name('home');
@@ -27,11 +34,4 @@ Route::get('/gincana/regulamento',[Gincana::class,'regulamento']) -> name('ginca
 Route::get('/historia', [PostController::class,'historia'])-> name('blog.historia');
 Route::get('/blog/{post:slug}',[PostController::class,'show']) -> name('blog.show');
 
-//Route::middleware([
-    //'auth:sanctum',
-    //config('jetstream.auth_session'),
-  //  'verified',
-//])->group(function () {
-    //Route::get('/sobre',[PostController::class,'sobre']) -> name('blog.sobre');
-  //  Route::get('/gincana',[PostController::class,'sobre']) -> name('blog.sobre');
-//});
+;

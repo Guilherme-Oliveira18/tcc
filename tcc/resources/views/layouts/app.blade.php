@@ -2,6 +2,14 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 
+<style>
+    .confbody {
+        display: flex;
+        flex-direction: column;
+        min-height: 100%;
+    }
+</style>
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -35,7 +43,7 @@
     @livewireStyles
 </head>
 
-<body class="font-sans antialiased">
+<body class="font-sans antialiased confbody">
     <x-banner />
 
     @include('layouts.partials.header')

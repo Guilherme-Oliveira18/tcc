@@ -4,7 +4,7 @@
         <div class="flex flex-col  mt-2 w-full  items-center justify-start font-sans ">
             <div class=" text-center items-center">
                 <h1
-                    class="text-3xl sm:text-5xl font-bold bg-clip-text text-transparent pb-4 md:pb-6 bg-gradient-to-r from-purple-200 via-purple-400 to-purple-800 dark:from-blue-400">
+                    class="mt-20 text-3xl sm:text-5xl font-bold bg-clip-text text-transparent pb-4 md:pb-6 bg-gradient-to-r from-purple-400 to-purple-800 dark:from-blue-400">
                     Pontos</h1>
                 </header>
             </div>

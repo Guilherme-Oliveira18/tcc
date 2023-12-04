@@ -15,7 +15,8 @@ class Cursos extends Model
     const NUM_EM5 = '5';
     const NUM_EM6 = '6';
     const NUM_EM7 = '7';
-    const NUM_TEC = '';
+    const NUM_EM8 = '8';
+    const NUM_TEC = 'Tecnico/FATEC';
 
     const NUM_DEFAULT = self::NUM_TEC;
     CONST numeracao =[
@@ -26,6 +27,7 @@ class Cursos extends Model
         self::NUM_EM5=>"EM5",
         self::NUM_EM6=>"EM6",
         self::NUM_EM7=>"EM7",
+        self::NUM_EM8=>"EM8",
         self::NUM_TEC=>"Curso Técnico/FATEC"
     ];
     public function turmas()

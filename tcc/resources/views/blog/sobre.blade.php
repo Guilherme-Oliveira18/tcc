@@ -44,7 +44,7 @@
                                     href="https://www.instagram.com/trunhan/" target="_blank"><i
                                         class="fa-brands fa-instagram"></i></a></li>
                             <li class="inline-block mx-3"><a class="text-white hover:text-red-500 duration-300"
-                                    href="#"><i class="fa-brands fa-github"></i></a></li>
+                                    href="https://github.com/Trunhan"><i class="fa-brands fa-github"></i></a></li>
                         </ul>
                     </div>
                 </div>
@@ -62,9 +62,9 @@
                         <h4 class="text-white text-lg font-normal mb-2">CEO</h4>
                         <ul>
                             <li class="inline-block mx-3"><a class="text-white hover:text-red-500 duration-300"
-                                    href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                                    href="https://www.instagram.com/leeandrinho/"><i class="fa-brands fa-instagram"></i></a></li>
                             <li class="inline-block mx-3"><a class="text-white hover:text-red-500 duration-300"
-                                    href="#"><i class="fa-brands fa-github"></i></a></li>
+                                    href="https://github.com/LeandroFonseca16"><i class="fa-brands fa-github"></i></a></li>
                         </ul>
                     </div>
                 </div>
@@ -82,9 +82,9 @@
                         <h4 class="text-white text-lg font-normal mb-2">CEO</h4>
                         <ul>
                             <li class="inline-block mx-3"><a class="text-white hover:text-red-500 duration-300"
-                                    href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                                    href="https://www.instagram.com/lupateli_/"><i class="fa-brands fa-instagram"></i></a></li>
                             <li class="inline-block mx-3"><a class="text-white hover:text-red-500 duration-300"
-                                    href="#"><i class="fa-brands fa-github"></i></a></li>
+                                    href="https://github.com/Lupateli"><i class="fa-brands fa-github"></i></a></li>
                         </ul>
                     </div>
                 </div>
@@ -100,9 +100,7 @@
                         <h4 class="text-white text-lg font-normal mb-2">CEO</h4>
                         <ul>
                             <li class="inline-block mx-3"><a class="text-white hover:text-red-500 duration-300"
-                                    href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                            <li class="inline-block mx-3"><a class="text-white hover:text-red-500 duration-300"
-                                    href="#"><i class="fa-brands fa-github"></i></a></li>
+                                    href="https://www.instagram.com/nicolas_celestino_06/"><i class="fa-brands fa-instagram"></i></a></li>
                         </ul>
                     </div>
                 </div>
@@ -119,9 +117,9 @@
                         <h4 class="text-white text-lg font-normal mb-2">CEO</h4>
                         <ul>
                             <li class="inline-block mx-3"><a class="text-white hover:text-red-500 duration-300"
-                                    href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                                    href="https://www.instagram.com/groveira/"><i class="fa-brands fa-instagram"></i></a></li>
                             <li class="inline-block mx-3"><a class="text-white hover:text-red-500 duration-300"
-                                    href="#"><i class="fa-brands fa-github"></i></a></li>
+                                    href="https://github.com/Guilherme-Oliveira18"><i class="fa-brands fa-github"></i></a></li>
                         </ul>
                     </div>
                 </div>

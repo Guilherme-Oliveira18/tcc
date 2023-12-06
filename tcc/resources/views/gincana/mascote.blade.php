@@ -1,7 +1,7 @@
 <x-app-layout title=" Gin - Mascotes">
-
+    <x-gincana.nav-gin />
     <div class="h-full w-full mt-24 m-4 flex flex-wrap items-center justify-start rounded-tl grid-flow-col auto-cols-max gap-4">
-        <x-gincana.nav-gin />
+
         <!-- End Nav -->
         <!-- Conteudo da página de Eventos-->
 

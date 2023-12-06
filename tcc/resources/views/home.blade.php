@@ -41,7 +41,7 @@
                         <div>
                             <a href="{{ route('blog.show', $Post->slug) }}" class="hidden duration-700 ease-in-out"
                                 data-carousel-item>
-                                <img src="{{ $Post->getThumbnailUrl() }}"
+                                <img loading="lazy" src="{{ $Post->getThumbnailUrl() }}"
                                     class="foto_new absolute rounded-xl block w-1/2 h-80 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
                                     alt="{{ $Post->title }}" />
 

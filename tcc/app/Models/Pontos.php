@@ -11,14 +11,10 @@ class Pontos extends Model
     protected $fillable = ['eventos_id', 'turmas_id', 'quantidade', 'valido','descricao'];
     use HasFactory;
 
-    public function scopePegaTudo( $query)
+    public function scopePegaTudo($query)
     {
-        $total = DB::table('pontos')
-        ->select(DB::raw('SUM(quantidade)'))
-        ->where('turmas_id', '=', $query)
-        ->groupBy('turmas_id')
-        ->get();
-        return $total;
+        $query=DB::select('SUM(quantidade) from pontos ' );
+        return $query;
     }
     public function scopeAtivadoPontos($query)
     {

@@ -15,20 +15,25 @@
                     Encontre-nos em nossas plataformas
                 </h5>
                 <div class="mt-6 lg:mb-0 mb-6">
-                    <button
-                        class="bg-white hover:bg-gray-800 duration-200 text-lightBlue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
-                        type="button">
-                        <i class="fab fa-twitter"></i></button><button
+
+                    <a href="https://www.facebook.com/etecfernando/?locale=pt_BR"><button
                         class="bg-white hover:bg-gray-800 duration-200 text-lightBlue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
                         type="button">
-                        <i class="fab fa-facebook-square"></i></button><button
-                        class="bg-white hover:bg-gray-800 duration-200 text-green-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+                        <i class="fab fa-facebook-square"></i></button></a>
+                    <a href="https://www.instagram.com/etecfernandoprestes/"><button
+                        class="bg-white hover:bg-gray-800 text-red-500 hover:text-red-800 duration-300 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
                         type="button">
-                        <i class="fab fa-whatsapp"></i></button><button
+                        <i class="fab fa-instagram"></i></button></a>
+                    <a href="https://br.linkedin.com/company/etec-fernando-prestes-sorocaba-sp"><button src
                         class="bg-white hover:bg-gray-800 duration-200 text-lightBlue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
                         type="button">
-                        <i class="fab fa-github"></i>
-                    </button>
+                        <i class="fab fa-linkedin"></i>
+                    </button></a>
+                    <a href="https://www.youtube.com/@EtecFernandoPrestesCPS/videos"><button src
+                        class="bg-white text-red-800 hover:bg-gray-800 duration-200  shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+                        type="button">
+                        <i class="fab fa-youtube"></i>
+                    </button></a>
                 </div>
             </div>
             <div class="w-full lg:w-6/12 px-4">
@@ -79,7 +84,7 @@
         <div class="flex flex-wrap items-center md:justify-between justify-center">
             <div class="w-full md:w-4/12 px-4 mx-auto text-center">
                 <div class="text-sm text-white font-semibold py-1">
-                    Cultura FP © <span id="get-current-year">2023</span>
+                    Cultura FP © <span id="get-current-year">2023</span> | Mantido por <a class="text-blue-500 hover:text-white font-semibold text-md" href="/sobre">New Wave</a>
                 </div>
             </div>
         </div>

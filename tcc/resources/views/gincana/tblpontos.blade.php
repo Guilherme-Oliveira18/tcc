@@ -18,6 +18,7 @@
                                 <th class="py-3 px-6 text-center">Quantidade</th>
                                 <th class="py-3 px-6 text-center"> EM</th>
                                 <th class="py-3 px-6 text-center">Categoria</th>
+                                <th class="py-3 px-6 text-center">Total</th>
                             </tr>
 
                         </thead>
@@ -51,6 +52,7 @@
                                             {{ $ponto->eventos->categoria }}
                                         </div>
                                     </td>
+
                                 </tr>
                             @endforeach
                         </tbody>

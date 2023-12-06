@@ -44,7 +44,7 @@ class Gincana extends Controller
         return view(
             'gincana.tblpontos',
             [
-                'pontos'=>$pontos->AtivadoPontos()->latest('created_at')->get()
+                'pontos'=>$pontos->AtivadoPontos()->oldest('turmas_id')->get(),
             ]
         );
     }
